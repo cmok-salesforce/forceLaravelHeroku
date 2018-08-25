@@ -1,8 +1,9 @@
 <html>
     <head>
-        <title>App Name - @yield('title')</title>
+        <title>@yield('title')</title>
     </head>
     <body>
+        <h1>@yield('header')</h1>
         @section('sidebar')
             This is the master sidebar.
         @show
