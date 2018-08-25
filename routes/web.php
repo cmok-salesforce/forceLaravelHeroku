@@ -17,5 +17,6 @@ Route::get('/', function () {
 
 Route::get('/authenticate', function () {
     Forrest::authenticate();
-    return Redirect::to('/');
+    return Forrest::query('SELECT Id FROM Account');
+    //return Redirect::to('/');
 });
