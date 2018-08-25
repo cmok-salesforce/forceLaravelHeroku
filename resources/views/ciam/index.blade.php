@@ -1,4 +1,4 @@
-@extends('ciam.layouts.app')
+@extends('layouts.app')
 
 @section('title', 'CIAM Title')
 

@@ -24,6 +24,6 @@ Route::get('/ciam', function () {
 
 Route::get('/authenticate', function () {
     Forrest::authenticate();
-    return Forrest::query('SELECT Id FROM Account');
-    //return Redirect::to('/');
+    //return Forrest::query('SELECT Id FROM Account');
+    return Redirect::to('/');
 });

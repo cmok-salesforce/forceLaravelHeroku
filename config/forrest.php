@@ -8,7 +8,7 @@ return [
     /*
      * Options include WebServer or UserPassword
      */
-    'authentication' => 'WebServer',
+    'authentication' => 'UserPassword',
 
     /*
      * Enter your credentials
@@ -17,15 +17,15 @@ return [
      */
     'credentials'    => [
         //Required:
-        'consumerKey'    => env('CONSUMER_KEY'),
-        'consumerSecret' => env('CONSUMER_SECRET'),
-        'callbackURI'    => env('CALLBACK_URI'),
-        'loginURL'       => env('LOGIN_URL'),
+        'consumerKey'    => env('FORREST_DEVLAB_CONSUMER_KEY'),
+        'consumerSecret' => env('FORREST_DEVLAB_CONSUMER_SECRET'),
+        'callbackURI'    => env('FORREST_DEVLAB_CALLBACK_URI'),
+        'loginURL'       => env('FORREST_DEVLAB_LOGIN_URL'),
 
         // Only required for UserPassword authentication:
-        'username'       => env('USERNAME'),
+        'username'       => env('FORREST_DEVLAB_USERNAME'),
         // Security token might need to be ammended to password unless IP Address is whitelisted
-        'password'       => env('PASSWORD'),
+        'password'       => env('FORREST_DEVLAB_PASSWORD'),
     ],
 
     /*
