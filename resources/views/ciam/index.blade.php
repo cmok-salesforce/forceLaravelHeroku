@@ -2,15 +2,16 @@
 
 @section('title', 'CIAM Title')
 
-@section('sidebar')
-    <H1>Salesforce Community Pages - CIAM </H1>
-    <ul>
-        <li>list1</li>
-        <li>list2</li>
-    </ul>
+@section('body')
+
+    <div class="container">
+        <H1>Salesforce Community Pages - CIAM </H1>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+        </ul>
+    </div>
+
 @endsection
 
 
-@section('content')
-    <p>This is my body content.</p>
-@endsection

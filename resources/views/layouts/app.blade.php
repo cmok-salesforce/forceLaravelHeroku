@@ -4,8 +4,9 @@
     </head>
     <body>
         <h1>@yield('header')</h1>
-        @section('sidebar')
-            This is the master sidebar.
+        
+        @section('body')
+            This is the master body.
         @show
 
         <div class="container">

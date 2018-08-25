@@ -3,29 +3,31 @@
 /**
  * Configuration options for Salesforce Oath settings and REST API defaults.
  */
+// https://packagist.org/packages/omniphx/forrest
 return [
 
     /*
      * Options include WebServer or UserPassword
      */
-    'authentication' => 'UserPassword',
+    'authentication' => 'WebServer',
 
     /*
      * Enter your credentials
      * Username and Password are only necessary for UserPassword flow.
      * Likewise, callbackURI is only necessary for WebServer flow.
      */
+    // Reference: https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm
     'credentials'    => [
         //Required:
-        'consumerKey'    => env('FORREST_DEVLAB_CONSUMER_KEY'),
-        'consumerSecret' => env('FORREST_DEVLAB_CONSUMER_SECRET'),
-        'callbackURI'    => env('FORREST_DEVLAB_CALLBACK_URI'),
-        'loginURL'       => env('FORREST_DEVLAB_LOGIN_URL'),
+        'consumerKey'    => env('FORREST_CONSUMER_KEY'),
+        'consumerSecret' => env('FORREST_CONSUMER_SECRET'),
+        'callbackURI'    => env('FORREST_CALLBACK_URI'),
+        'loginURL'       => env('FORREST_LOGIN_URL'),
 
         // Only required for UserPassword authentication:
-        'username'       => env('FORREST_DEVLAB_USERNAME'),
+        'username'       => env('FORREST_USERNAME'),
         // Security token might need to be ammended to password unless IP Address is whitelisted
-        'password'       => env('FORREST_DEVLAB_PASSWORD'),
+        'password'       => env('FORREST_PASSWORD'),
     ],
 
     /*

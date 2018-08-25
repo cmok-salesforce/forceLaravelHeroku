@@ -27,3 +27,22 @@ Route::get('/authenticate', function () {
     //return Forrest::query('SELECT Id FROM Account');
     return Redirect::to('/');
 });
+
+Route::get('/account', function () {
+    $loginURL = 'https://test.salesforce.com';
+    Forrest::authenticate($loginURL);
+    return Forrest::query('SELECT Id FROM Account');
+
+});
+
+Route::get('/id', function () {
+    $loginURL = 'https://test.salesforce.com';
+    Forrest::authenticate($loginURL);
+    $response = Forrest::identity();
+    $content = (string)$response->getBody(); // Guzzle response
+    /*
+    Event::listen('forrest.response', function ($request, $response) {
+        dd((string)$response);
+    }); */
+
+});
