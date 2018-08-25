@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\View\View;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,10 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/ciam', function () {
+    return View::make('adecco.ciam.index');
 });
 
 Route::get('/authenticate', function () {
