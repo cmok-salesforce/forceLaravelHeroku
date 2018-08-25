@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\View\View;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,3 +51,11 @@ Route::get('/id1', function () {
     //dd($response);
     //$content = (string)$response->getBody(); // Guzzle response - NOT WORKING
 });
+
+Route::get('/sgp1', function () {
+    //return view('sfdc.packagebuilder');
+});
+
+Route::get('/dd', 'MyDummyController@index');
+
+Route::get('/sgp', 'Sfdc\PackageBuilderController@index');

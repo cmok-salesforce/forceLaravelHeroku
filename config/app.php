@@ -160,7 +160,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         // https://packagist.org/packages/omniphx/forrest
-        Omniphx\Forrest\Providers\Laravel\ForrestServiceProvider::class
+        Omniphx\Forrest\Providers\Laravel\ForrestServiceProvider::class,
+        // https://stackoverflow.com/questions/28290332/best-practices-for-custom-helpers-on-laravel-5
 
     ],
 
