@@ -35,10 +35,20 @@ Route::get('/account', function () {
 
 });
 
+# https://packagist.org/packages/omniphx/forrest
 Route::get('/id', function () {
     $loginURL = 'https://test.salesforce.com';
     Forrest::authenticate($loginURL);
     $response = Forrest::identity();
     return $response;
     //$username = $response['username']
+});
+
+Route::get('/id1', function () {
+    $loginURL = 'https://test.salesforce.com';
+    Forrest::authenticate($loginURL);
+    $resource= 'Account/describe/';
+    $response = Forrest::sobjects($resource, ['format' => 'none']);
+    //dd($response);
+    //$content = (string)$response->getBody(); // Guzzle response - NOT WORKING
 });

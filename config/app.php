@@ -210,7 +210,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Forrest' => Omniphx\Forrest\Providers\Laravel\Facades\Forrest::class
+        'Forrest' => Omniphx\Forrest\Providers\Laravel\Facades\Forrest::class,
+        'A' => Arrayy\Arrayy::class,
 
     ],
 
