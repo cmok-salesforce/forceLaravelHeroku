@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Helpers\readDirectory;
+use Helpers;
 
 class MyDummyController extends Controller
 {
