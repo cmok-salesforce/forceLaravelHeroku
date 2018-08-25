@@ -162,6 +162,7 @@ return [
         // https://packagist.org/packages/omniphx/forrest
         Omniphx\Forrest\Providers\Laravel\ForrestServiceProvider::class,
         // https://stackoverflow.com/questions/28290332/best-practices-for-custom-helpers-on-laravel-5
+        browner12\helpers\HelperServiceProvider::class,
 
     ],
 
