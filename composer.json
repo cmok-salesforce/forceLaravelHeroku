@@ -10,6 +10,7 @@
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
         "omniphx/forrest": "2.*",
+        "spatie/array-to-xml": "^2.7",
         "voku/arrayy": "^5.1"
     },
     "require-dev": {
@@ -18,7 +19,8 @@
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
         "phpunit/phpunit": "^7.0",
-        "sven/artisan-view": "^3.0"
+        "sven/artisan-view": "^3.0",
+        "letsdrink/ouzo-goodies": "1.6.0"
     },
     "autoload": {
         "classmap": [
