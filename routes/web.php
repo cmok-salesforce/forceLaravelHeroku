@@ -18,7 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/ciam', function () {
-    return View::make('adecco.ciam.index');
+    //return View::make('ciam.index');
+    return view('ciam.index');
 });
 
 Route::get('/authenticate', function () {
